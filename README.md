@@ -70,8 +70,8 @@ print(y_pred)
 ```
 
 # Output:
-![best fit line](11.jpg)
-![best fit line](12.jpg)
+![line](11.jpg)
+![line](12.jpg)
 
 
 ## Result:
