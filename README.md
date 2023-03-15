@@ -1,12 +1,12 @@
 # Implementation of Univariate Linear Regression
-## AIM:
+## Aim:
 To implement univariate Linear Regression to fit a straight line using least squares.
 
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
-## Algorithm
+## Algorithm:
 1. Get the independent variable X and dependent variable Y.
 2. Calculate the mean of the X -values and the mean of the Y -values.
 3. Find the slope m of the line of best fit using the formula. 
@@ -20,13 +20,58 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ```
 /*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: 
-RegisterNumber:  
+Developed by: Yuvadarshini S
+RegisterNumber: 212221230126
+
+#import packages    
+import numpy as np
+import matplotlib.pyplot as plt
+
+#preprocessing input data
+x=np.array(eval(input()))
+y=np.array(eval(input()))
+
+
+#Mean
+x_mean=np.mean(x)
+y_mean=np.mean(y)
+
+num=0      #for slope
+denom=0     #for slope
+
+#to find sum of (xi-x') & (yi-y') & (xi-x')^2...
+for i in range(len(x)):
+  num+=((x[i]-x_mean)*(y[i]-y_mean))
+  denom+=(x[i]-x_mean)**2
+
+#calculate slope
+m=num/denom
+
+#calculate intercept
+b=y_mean-(m*x_mean)
+
+#print m and b
+print(m,b)
+
+#Line Equation
+y_predicted=m*x+b;
+print(y_predicted)
+
+#to plot graph
+plt.scatter(x,y)
+plt.plot(x,y_predicted,color='pink');
+plt.show()
+
+#predict y if x=3
+y_pred=m*3+b
+print(y_pred)
+
 */
 ```
 
-## Output:
-![best fit line](sam.png)
+# Output:
+![best fit line](11.jpg)
+![best fit line](12.jpg)
 
 
 ## Result:
