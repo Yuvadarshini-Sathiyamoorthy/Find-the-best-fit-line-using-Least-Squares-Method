@@ -68,7 +68,6 @@ print(y_pred)
 ```
 
 # Output:
-![line](11.jpg)
 ![line](12.jpg)
 
 
