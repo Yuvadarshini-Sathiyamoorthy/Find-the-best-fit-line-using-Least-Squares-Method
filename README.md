@@ -68,7 +68,7 @@ print(y_pred)
 ```
 
 # Output:
-![line](12.jpg)
+![12](https://user-images.githubusercontent.com/93482485/229297371-619fcc80-a731-4443-ac6b-4834bfa8ba73.jpg)
 
 
 ## Result:
